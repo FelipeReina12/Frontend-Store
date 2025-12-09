@@ -1,0 +1,95 @@
+:root {
+    --primario: #9c27b0;
+    --primarioOscuro: #89119D;
+    --secundario: #FFCE00;
+    --secundarioOscuro: rgb(233, 287, 2);
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    
+    --fuentePrincipal: "Staatliches", sans-serif;
+}
+
+/*Boxsizing*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;  /*Esto lo agregamos para que 1 rem sea igual a 10px*/
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*Definir los globales*/
+body {
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5rem;  /*Interlineado*/
+}
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;  /*max-width es para que se adapte al tamaño que tiene disponible*/
+}
+.contenedor {
+    max-width: 12rem;  /*se usa para que ocupe 120 px*/
+    margin: 0 auto;  /*para centrarlo*/
+}
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+/*ciere de globales*/
+.header {
+    display: flex;
+    justify-content: center;  /*para centrar horizontalmente*/
+}
+.header__logo {
+    margin: 3rem 0;
+}
+
+.footer {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__texto {
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 2.2rem;
+}
+
+/*Estilos para la naegacion*/
+.navegacion {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;  /*espacio entre los elementos*/
+    margin-bottom: 5rem;
+}
+.navegacion__enlace {
+    color: var(--blanco);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+}
+.navegacion__enlace--activo, /*navegacion__enlace--activo es para el enlace activo*/
+.navegacion__enlace:hover{  /*cuadno se pasa el mouse por encima cambia de color*/
+    color: var(--secundario);
+}
+
