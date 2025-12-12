@@ -2,7 +2,7 @@
     --primario: #9c27b0;
     --primarioOscuro: #89119D;
     --secundario: #FFCE00;
-    --secundarioOscuro: rgb(233, 287, 2);
+    --secundarioOscuro: rgb(233, 187, 2);
     --blanco: #FFFFFF;
     --negro: #000000;
     
@@ -33,7 +33,7 @@ a {
     text-decoration: none;
 }
 img {
-    max-width: 100%;  /*max-width es para que se adapte al tamaño que tiene disponible*/
+    width: 100%;  /*max-width es para que se adapte al tamaño que tiene disponible*/
 }
 .contenedor {
     max-width: 120rem;  /*se usa para que ocupe 120 px*/
@@ -119,9 +119,6 @@ h3 {
     padding: 1rem;
     margin: 0 auto;
 }
-.producto__imagen {
-    width: 100%;
-}
 .producto__nombre {
     font-size: 2rem;
 }
@@ -186,7 +183,6 @@ h3 {
 }
 .nosotros__imagen {
     grid-row: 1/2;
-    width: 100%;
 }
 @media (min-width: 768px) {
     .nosotros__imagen {
@@ -209,9 +205,6 @@ h3 {
 .bloque {
     text-align: center;
 }
-.bloque__imagen {
-    width: 100%;
-}
 .bloque__titulo {
     margin: 0;
 }
@@ -227,4 +220,34 @@ h3 {
     .comprar h2{
     font-size: 3.2rem;
     }
+}
+
+/*******Pagina del producto*******/
+@media (min-width: 768px) {
+    .camisa {
+        margin: 0 auto;
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+.formulario {
+
+}
+.formulario__campo {
+
+}
+.formulario__submit {
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;  /*ease es para que la transicion sea suave*/
+}
+.formulario__submit:hover {
+    cursor: pointer;
+    background-color: var(--secundarioOscuro);
 }

@@ -15,7 +15,8 @@
 <body>
     <header class="header">
         <a href="index.html">
-            <img class="header__logo" src="/img/logo.png" alt="Logotipo">  <!-- el logo nos lleva al inicio de la página-->
+            <img class="header__logo" src="/img/logo.png" alt="Logotipo">
+            <!-- el logo nos lleva al inicio de la página-->
         </a>
     </header>
 
@@ -25,7 +26,31 @@
     </nav>
 
     <main>
-        <h1>Productos</h1>
+        <h1>ReactJS</h1>
+        <div class="camisa">
+            <img class="camisa__imagen" src="/img/3.jpg" alt="imagen del producto">
+            <div class="camisa__conteido">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolor error, dolorum cupiditate non
+                    quis
+                    commodi excepturi tenetur tempora mollitia atque, facere adipisci perspiciatis, distinctio eos est
+                    modi!
+                    Corporis, laboriosam?
+                </p>
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>--Seleccionar talla--</option>
+                        <!--disabled es para que no se pueda seleccionar o que sea una guía-->
+                        <!--Selected es para que este seleecionado por defecto -->
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" max="100">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
     </main>
 
 
