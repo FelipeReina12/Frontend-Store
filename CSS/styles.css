@@ -36,7 +36,7 @@ img {
     max-width: 100%;  /*max-width es para que se adapte al tamaño que tiene disponible*/
 }
 .contenedor {
-    max-width: 12rem;  /*se usa para que ocupe 120 px*/
+    max-width: 120rem;  /*se usa para que ocupe 120 px*/
     margin: 0 auto;  /*para centrarlo*/
 }
 h1, h2, h3 {
@@ -191,5 +191,40 @@ h3 {
 @media (min-width: 768px) {
     .nosotros__imagen {
     grid-column: 2/3;
+    }
+}
+
+/********Bloques********/
+.bloques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+/******Aplicando media query******/
+@media (min-width: 768px) {
+    .bloques {
+    grid-template-columns: repeat(4, 1fr);
+    }
+}
+.bloque {
+    text-align: center;
+}
+.bloque__imagen {
+    width: 100%;
+}
+.bloque__titulo {
+    margin: 0;
+}
+.bloques p{
+    font-size: 1.6rem;
+    text-align:center;
+    line-height: 1.3;
+}
+.comprar h2{
+    font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+    .comprar h2{
+    font-size: 3.2rem;
     }
 }
