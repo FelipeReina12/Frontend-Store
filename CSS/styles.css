@@ -45,7 +45,12 @@ h1, h2, h3 {
     font-family: var(--fuentePrincipal);
 }
 h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
 }
 h2 {
     font-size: 3.2rem;
@@ -118,12 +123,28 @@ h3 {
     width: 100%;
 }
 .producto__nombre {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 .producto__precio {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     color: var(--secundario);
 }
+@media (min-width: 768px) {  /*cuando la pantalla sea mayor a 768px se aplican estos estilos*/
+    .producto__nombre {
+    font-size: 4rem;
+}
+    .producto__precio {
+        font-size: 2.8rem;
+    }
+}
+
+
+
+
+
+
+
+
 .producto__nombre, .producto__precio {
     font-family: var(--fuentePrincipal);
     margin: 2rem 0;
