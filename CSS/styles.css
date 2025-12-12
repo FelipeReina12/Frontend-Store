@@ -100,7 +100,7 @@ h3 {
 /*Grid*/
 .grid {
     max-width: 120rem;
-    margin: 0 auto;;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -137,14 +137,6 @@ h3 {
         font-size: 2.8rem;
     }
 }
-
-
-
-
-
-
-
-
 .producto__nombre, .producto__precio {
     font-family: var(--fuentePrincipal);
     margin: 2rem 0;
@@ -171,6 +163,33 @@ h3 {
     .grafico--node {
     grid-row: 5/6;
     grid-column:2/4;
-
 }   
+}
+
+/**********Nosotros**********/
+.nosotros {
+    display: grid;
+    grid-template-rows: repeat(2, auto);  /*auto para que se adapte al contenido*/
+}
+@media (min-width: 768px) {  /*cuando la pantalla sea mayor a 768px se aplican estos estilos*/
+   .nosotros {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+} 
+}
+.nosotros__contenido {
+    text-align: inherit;
+    line-height: 1.5;
+    font-size: 2rem;
+}
+.nosotros__imagen {
+    grid-row: 1/2;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .nosotros__imagen {
+    grid-column: 2/3;
+    }
 }
