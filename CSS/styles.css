@@ -92,4 +92,41 @@ h3 {
 .navegacion__enlace:hover{  /*cuadno se pasa el mouse por encima cambia de color*/
     color: var(--secundario);
 }
-
+/*Grid*/
+.grid {
+    max-width: 120rem;
+    margin: 0 auto;;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+@media (min-width: 768px) {
+    .grid {
+    max-width: 120rem;
+    margin: 0 auto;;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}   
+}
+.producto {
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+    margin: 0 auto;
+}
+.producto__imagen {
+    width: 100%;
+}
+.producto__nombre {
+    font-size: 4rem;
+}
+.producto__precio {
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+.producto__nombre, .producto__precio {
+    font-family: var(--fuentePrincipal);
+    margin: 2rem 0;
+    text-align: center;
+    line-height: 0.5;
+}
